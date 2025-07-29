@@ -1,52 +1,71 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: antiquewhite;
-    color:#333;
-    text-align:center;
-    line-height: 3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background for whole page */
+  color: white;
 }
 
-.section{
-    padding: 40px 20px;
+/* Section background colors with shades of black/gray (mobile first) */
+#home {
+  background-color: #1c1c1c; /* Very dark gray */
+  color: white;
 }
 
-.hero{
-    padding: 50px 20px ;
+#about {
+  background-color: #2e2e2e; /* Dark gray */
+  color: white;
 }
 
-.hero h1{
-    font-size: 100px;
+#skills {
+  background-color: #3f3f3f; /* Medium dark gray */
+  color: white;
 }
 
-.grid {
-    display:grid;
-    gap: 10px;
-}
-.grid div{
-    background-color: blue;
-    padding: 20px;
-    border-radius: 100px;
+#projects {
+  background-color: #505050; /* Medium gray */
+  color: white;
 }
 
-@media (max-width: 768px){
-    .hero h1 {font-size: 40px;}
+#contact {
+  background-color: #616161; /* Lighter gray */
+  color: white;
 }
 
-
-@media (max-width:768px){
-    body{background-color: blueviolet;}
+/* Section styling */
+section, footer {
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 900px;
+  border: 1px solid #777; /* subtle border */
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
-.hero-text{
-    display:flex;
-    flex-direction: column;
+/* Skill boxes */
+.skill-box {
+  background: #222;
+  color: #ddd;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  cursor: default;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.hero img{
-    border-radius: 30%;
+.skill-box:hover {
+  background-color: #444; /* Slightly lighter on hover */
+  transform: scale(1.1);
+  color: white;
+}
+
+/* Responsive layout tweaks */
+@media (min-width: 768px) {
+  #home {
+    padding: 60px 20px;
+  }
+
+  section, footer {
+    padding: 60px 40px;
+  }
 }

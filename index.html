@@ -1,84 +1,79 @@
-<!DOCTYPE html>html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ian's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ian's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Ian G</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">about Me </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">projects</a>
-        </li>
-        <li class="nav-item">
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-
-
-
-
-
-<!-- This is where most of my code will life --> -->
 <body>
-   
-   
-<section id="home" class="hero container-fluid d-flex flex-lg-row flex-column align-items-center justify-content-center">
-<img src="67.jpeg" alt="Profile Picture" width="200px" height="400px" />
-    <div class="hero-text"> 
-    <h1>Hi I am <span class="accent"> Ian Garcia</span></h1>
-    <p> My name is Ian I have one sibling and i go to Ams. i enjoy playing basketball as a hobby and spending time 
-    with friends and family.</p>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <p id="greeting"></p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-</section>
+  </nav>
 
-<section id="about" class="section">
-    <h2>about me</h2>
-    <p> 5-6 Sentences about yourself</p>
-</section>
-
-
-<section id="skills" class="section">
-    <h2>My skills</h2>
-    <div class="grid">
-    </div>HTML</div>
-   <div>CSS</div> 
-    <div>JavaScript</div>
+  <!-- Home Section -->
+  <section id="home" class="d-flex flex-column flex-lg-row align-items-center justify-content-center p-4">
+    <img src="67.jpeg" alt="High Resolution Photo of Ian Garcia" width="300px" class="rounded mb-3 mb-lg-0" />
+    <div class="ms-lg-4 text-center text-lg-start">
+      <h1>Hello! I'm Ian Garcia</h1>
+      <p>I go to AMS. I like basketball and spending time with family and friends.</p>
     </div>
-</section>
+  </section>
 
-<section id="contact"class="section">
-<h2>contact</h2>
-<footer><p>contact me through my 929-557-14166</p></footer>
+  <!-- About Section -->
+  <section id="about" class="p-4 text-center">
+    <h2>About Me</h2>
+    <p>
+      I'm learning how to build websites. I like to be creative and try new things. I'm still new, but I enjoy coding so far. I have one sibling. I go to school and like tech stuff. Thanks for checking out my site!
+    </p>
+  </section>
 
-</section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <!-- Skills Section -->
+  <section id="skills" class="p-4 text-center">
+    <h2>My Skills</h2>
+    <p>These are some things I’m learning:</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-4 text-center">
+    <h2>Projects</h2>
+    <p>Here are some projects I have worked on recently.</p>
+  </section>
+
+  <!-- Footer / Contact Section -->
+  <footer id="contact" class="p-4 text-center">
+    <h2>Contact Me</h2>
+    <p>You can call me at: 929-557-1416</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
-
-
-
-
-
-
-
 
 </html>
