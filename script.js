@@ -17,7 +17,7 @@ const reviews = [
   {
     id: 3,
     name: 'Eve Abraha',
-    job: 'intern',
+    job:'Physics Teacher',
     img: 'https://images.squarespace-cdn.com/content/v1/5bec73fa3917eec31d42357d/1628120707534-L3T1VRB7DRMX8IQNQ3SY/Screen+Shot+2021-08-04+at+7.41.40+PM.png?format=1000w',
     text: 'Ian, you are such a kind and lovely student. You are very intelligent and when you buckle down, you are able to produce great work. I am very proud of you because you really came out of your shell this school year! Great job!',
   },
